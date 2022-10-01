@@ -33,7 +33,7 @@ let set = setTimeout(() => {
 console.log(set); // 4
 
 let btn = document.getElementById("btn");
-
+// onclick Will Stop 
 btn.onclick = function () {
   clearTimeout(set);
 };
