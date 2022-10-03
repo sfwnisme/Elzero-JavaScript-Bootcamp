@@ -14,11 +14,12 @@
 - `?q=baz` => search
 - `#bang` => hash
 
-| name | job |
-|------|---|
-| `https:` | protocol
-| `8080` | port
-| `example.org:8080` | host
-| `/foo/bar` | pathname
-| `?q=baz` | search
-| `#bang` | hash
+| name                                           | job            |
+| ---------------------------------------------- | -------------- |
+| `https://example.org:8080/foo/bar?q=baz#bang:` | location (URL) |
+| `https:`                                       | protocol       |
+| `8080`                                         | port           |
+| `example.org:8080`                             | host           |
+| `/foo/bar`                                     | pathname       |
+| `?q=baz`                                       | search         |
+| `#bang`                                        | hash           |
