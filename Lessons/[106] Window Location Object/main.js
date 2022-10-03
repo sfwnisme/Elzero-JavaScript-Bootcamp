@@ -8,6 +8,11 @@
   --- reload()
   --- replace()
   --- assign()
+  -Lesson Expressions
+  --- entry => Saved History Of The Browser -  Opining through - Join
+  --- Hash => Id Linkes
+  --- http => hiber text transfare protocol
+  --- https => hiber text transfare protocol secure player
 */
 
 console.log(location);
@@ -21,3 +26,17 @@ console.log(location.host); // Got The Host With The Port
 console.log(location.hostname); // Git  The Host Name
 // location.href = "https://www.elzero.org";
 // location.hostname = "google.com"; // Here We Can Change The Host Names
+
+// Portocol => http & https
+console.log(location.protocol);
+// location.protocol = "https"
+// location.protocol = "http"
+
+//reload() => reload the page
+// console.log(location.reload()) // infinit reload
+// location.reload() // infinit reload
+
+//replace() => oposite replace() it replace the current URL to new one. It will not save the removed ENTRY form HISTORY
+// location.replace("https://google.com"); // directly will retarget you to https://google.com
+
+//assign() => replace the current URL to new one. It will save all entries joined through in HISTORY
