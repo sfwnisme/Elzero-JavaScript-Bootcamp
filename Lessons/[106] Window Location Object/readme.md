@@ -14,7 +14,7 @@
 - `?q=baz` => search
 - `#bang` => hash
 
-| name                                           | job            |
+| Location part                                  | namge          |
 | ---------------------------------------------- | -------------- |
 | `https://example.org:8080/foo/bar?q=baz#bang:` | location (URL) |
 | `https:`                                       | protocol       |
