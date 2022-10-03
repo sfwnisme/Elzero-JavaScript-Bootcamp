@@ -15,6 +15,7 @@
   --- https => hiber text transfare protocol secure player
 */
 
+//location:href => redirect you to a specific link
 console.log(location);
 console.log(location.href);
 // location.href = "#two";
