@@ -27,10 +27,6 @@ window.localStorage["fontSize"] = "20px";
 // value = #f00
 ```
 
-```javascript
-
-```
-
 you can check your code in this way
 
 ```javascript
@@ -56,8 +52,8 @@ console.log(window.localStorage["fontSize"]); // square pracet method
 
 **Check localStorage from the browser**
 
-Chrome => inspect > application > local storage
-Mozilla => inspect > storage > local storage
+- Chrome => inspect > application > local storage
+- Mozilla => inspect > storage > local storage
 
 ![local storage form browser](img1.png)
 
