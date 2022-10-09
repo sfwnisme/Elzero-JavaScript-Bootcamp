@@ -18,7 +18,7 @@ console.log(window.localStorage);
 console.log(typeof window.localStorage);
 
 // setItem => Adding the properties
-window.localStorage.setItem("color", "#f00");
+window.localStorage.setItem("color", "#000");
 window.localStorage.fontWeight = "bold";
 window.localStorage["fontSize"] = "20px";
 
@@ -34,7 +34,10 @@ console.log(window.localStorage["color"]);
 // window.localStorage.clear();
 
 // Set color on page
-document.body.style.backgroundColor = window.localStorage.getItem("color");
+// All this ways working
+// document.body.style.backgroundColor = window.localStorage.getItem("color");
+// document.body.style.backgroundColor = window.localStorage.color;
+document.body.style.backgroundColor = window.localStorage["color"];
 
 // key => Get the key the index of it
 console.log(window.localStorage.key(1)); // value = color
