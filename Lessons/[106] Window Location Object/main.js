@@ -39,6 +39,6 @@ console.log(location.protocol);
 
 //assign() => replace the current URL to new one. It will save all entries joined through in HISTORY
 
-//replace() => oposite replace() it replace the current URL to new one. It will not save the removed ENTRY form HISTORY
+//replace() => oposite assign() it replace the current URL to new one. It will not save the removed ENTRY form HISTORY
 // location.replace("https://google.com"); // directly will retarget you to https://google.com
 
