@@ -13,7 +13,7 @@ console.log(typeof window.localStorage); // type => object
 
 #### setItem
 
-**setItem** => Adding properties in `Key and Value` format
+**#setItem** => Adding properties in `Key and Value` format
 
 We can use three ways to `setItem`
 
@@ -41,7 +41,7 @@ localStorage info on console
 
 ![localStorage info](img.png)
 
-**getItem** => Getting the key of `setItem` to prepare it being usble
+**#getItem** => Getting the key of `setItem` to prepare it being usble
 
 Three ways to `getItem`
 
@@ -69,4 +69,19 @@ You can use any of this way all of them doing the same job
 document.body.style.backgroundColor = window.localStorage.getItem("color");
 document.body.style.backgroundColor = window.localStorage.color;
 document.body.style.backgroundColor = window.localStorage["color"];
+```
+
+**#removeItem** => It Works on removing a single key from the `localStorage`
+It must be before the `getItem`
+
+```javascript
+window.localStorage.removeItem("color");
+```
+
+**#clear** => Remove all `localStorage` keys
+
+Format
+
+```javascript
+window.localStorage.clear();
 ```
