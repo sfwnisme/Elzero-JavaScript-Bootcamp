@@ -26,7 +26,15 @@ window.localStorage["fontSize"] = "20px";
 console.log(window.localStorage.getItem("color"));
 console.log(window.localStorage.color);
 console.log(window.localStorage["color"]);
-let changeBackgroundColor = window.localStorage.getItem("color");
 
-// Set color on the page
-document.body.style.backgroundColor = changeBackgroundColor;
+// removeItem = remove a single key value
+// window.localStorage.removeItem("color"); // it must be before the getItem like the backgroundColor
+
+// clean => remove all key values
+// window.localStorage.clear();
+
+// Set color on page
+document.body.style.backgroundColor = window.localStorage.getItem("color");
+
+// key => Get the key the index of it
+console.log(window.localStorage.key(1)); // value = color
