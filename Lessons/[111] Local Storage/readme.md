@@ -56,8 +56,8 @@ console.log(window.localStorage["fontSize"]); // square pracet method
 
 **Check localStorage from the browser**
 
-_Chrome_ => inspect > application > local storage
-_Mozilla_ => inspect > storage > local storage
+Chrome => inspect > application > local storage
+Mozilla => inspect > storage > local storage
 
 ![local storage form browser](img1.png)
 
