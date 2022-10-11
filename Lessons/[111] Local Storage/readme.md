@@ -74,7 +74,7 @@ It must be before the `getItem`
 window.localStorage.removeItem("color");
 ```
 
-**#clear** => Remove all `localStorage` keys
+**#clear** => Remove the whole `localStorage` keys
 
 Format
 
