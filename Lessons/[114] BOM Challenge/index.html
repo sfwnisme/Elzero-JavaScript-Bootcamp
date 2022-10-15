@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #191725;
+        /* width: 30rem; */
+        display: grid;
+        place-items: center;
+        /* height: 100vh; */
+      }
+      form {
+        background-color: #474360;
+        display: flex;
+        width: fit-content;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        gap: 1rem;
+        width: 30rem;
+      }
+      form [type="text"] {
+        /* display: none; */
+        border-radius: 0.3rem;
+        width: 100%;
+        padding: 1rem;
+        border: none;
+      }
+      form [type="submit"] {
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        cursor: pointer;
+      }
+      form input:focus {
+        outline: none;
+      }
+      ul {
+        background-color: #474360;
+        width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: initial;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 0.3rem;
+      }
+      li {
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+        background-color: white;
+        color: black;
+        /* width: 100%; */
+        padding: 0.3rem;
+        border-radius: 0.3rem;
+      }
+      li button {
+        background-color: orangered;
+        color: white;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 1rem;
+        cursor: pointer;
+      }
+    </style>
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" data-value="input" />
+      <input type="submit" value="Add Task" data-value="submit" />
+    </form>
+    <ul data-value="ul"></ul>
+    <script src="main.js"></script>
+  </body>
+</html>
