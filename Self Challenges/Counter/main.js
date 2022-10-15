@@ -13,3 +13,7 @@ function counterFunction(e) {
   }
 }
 document.addEventListener("click", counterFunction);
+
+console.log(
+  document.styleSheets[0]
+);
