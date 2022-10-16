@@ -54,6 +54,11 @@ function addElementsToPageFrom(arrayOfTasks) {
     // div.innerText = task.title;
     div.append(document.createTextNode(task.title));
 
+    //Check If Task Is Done
+    if (task.completed) {
+      div.className = "done task";
+    }
+
     // Create Delete Button
     let span = document.createElement("span");
     span.className = "del";
@@ -64,6 +69,7 @@ function addElementsToPageFrom(arrayOfTasks) {
     // Append Button To Main Div
     div.append(span);
     console.log(div);
+    //Add Task Div To Task Container
     tasksDiv.append(div);
   });
 }
