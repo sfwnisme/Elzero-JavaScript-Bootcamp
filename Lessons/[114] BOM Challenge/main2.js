@@ -1,9 +1,40 @@
 /* 
-  Process
-  [1] Add Task
-  [2] Add Task To Array Using Function
-  [3] Add Tasks To Page
-  
+  Solution Process
+
+  [1] Add Task => submit.onclick
+    - if condition
+    -- adding function => addTaskToArray(input.value) // insert all input values in array using function
+    -- empty input => input.value = "" // after the previous function works empty the input * if we wrote it before the function it will not out put any value because we removed the value before the function process work, Thus we must write it after the function in the end of the condition
+
+  [2] Add Task To Array Using Function => function addTaskToArray(taskText)
+    - creating object => const task // insert the data we will loop by it to adding in array
+    -- id => id: Date.now(), //unique id for every array element 
+    ---- unique id => Date.now() // will give you date of this moment as numbers you can use it as unique id
+    -- title => title: taskText, // the taskText(input.value)
+    -- completed => completed: false, // the status of the todo line if it's done or not
+    
+    - creating  array in GLOBAL SCOPE => let arrayOfTasks = []; // this array we will push the taskText(input.value) in it
+    -- push the task(the object) into the array arrayOfTasks => arrayOfTasks.push(task) // we use it in array to loop it
+    
+    - addElementsToPageForm(arrayOfTasks) // using this function to loop the array and create elements to taskDiv container
+
+  [3] Add Tasks To Page Using Function => function addElementsToPageFrom(arrayOfTasks)
+    - empty taskDiv => taskDiv.innerHTML = ""; // Before any process this function will remove any content in the elements container in DOM
+    - looping arrayOfTasks => arrayOfTasks.forEach((task = (arrayOfTasks))) // will loop the array and create elements to DOM
+    
+    -- create div => let div = document.createElement("div") // create div to contain the task name and button
+    ---- add class to div => div.className = "task" // adding attribute for using it in css
+    ---- adding data attribute => div.setAttribute("data-id", task.id) // task.id = relate to forEach((task)) not the object (const task = {})
+    ---- append task to div => div.append(document.createTextNode(task.title)) // append object property (title) into div element
+    -- completed if condition => if(task.completed) // by default it is if condition is true without writing it 
+    ---- add class to div => div.className = "done task" // if it's true (completed) add class "done" it will change the shape using css if adding this class
+    
+    -- create span = let span => document.createElement("span"); // create this element using it as button
+    ---- adding class to span => span.className = "del" // to access from css
+    ---- append text to span => span.append(document.createTextNode("Delete")); // button text
+    
+    -- append span to div => div.append(span) // display span into div 
+    -- append div to tasksDiv => tasksDiv.append(div) // display div to task container
 */
 
 let input = document.querySelector(".input");
@@ -23,7 +54,7 @@ submit.onclick = function () {
   }
 };
 
-//   [2] Add Task To Array Using Function
+//[2] Add Task To Array Using Function
 // addTaskToArray(taskText) => addTaskToArray(input.value) =>> input value will have all the process in this function
 function addTaskToArray(taskText) {
   // console.log(taskText); // taskText = input.value
@@ -33,6 +64,7 @@ function addTaskToArray(taskText) {
     title: taskText, // the input.value
     completed: false, // by default it's false due to did not add any thing yet
   };
+  console.log(task); // testing
   // push task to array of tasks
   // pushing the tesk object into array will contain all object names
   arrayOfTasks.push(task);
@@ -73,3 +105,4 @@ function addElementsToPageFrom(arrayOfTasks) {
     tasksDiv.append(div);
   });
 }
+console.log(Date.now());
