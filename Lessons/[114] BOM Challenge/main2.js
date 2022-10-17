@@ -71,6 +71,15 @@ function addTaskToArray(taskText) {
   // console.log(arrayOfTasks); // testing
   // [3] Add Tasks To Page
   addElementsToPageFrom(arrayOfTasks);
+
+  // Add Tasks To localStorage
+  // All process that has done on arrayOfTasks array will import to localStorage
+  addDataToLocalStorageFrom(arrayOfTasks);
+
+  // for testing
+  console.log(arrayOfTasks);
+  // this will be added to localStorage setItem value
+  console.log(JSON.stringify(arrayOfTasks));
 }
 
 function addElementsToPageFrom(arrayOfTasks) {
@@ -106,3 +115,10 @@ function addElementsToPageFrom(arrayOfTasks) {
   });
 }
 console.log(Date.now());
+
+//[4] adding arrayOfTasks to localStorage
+function addDataToLocalStorageFrom(arrayOfTasks) {
+  window.localStorage.setItem("tasks", JSON.stringify(arrayOfTasks));
+}
+// this will be save in local storage as a object
+// window.localStorage.clear();
