@@ -55,7 +55,7 @@ if (localStorage.getItem("tasks")) {
   arrayOfTasks = JSON.parse(localStorage.getItem("tasks"));
 }
 
-// Trigger Get Data Form Local Storage function
+//[5] Trigger Get Data Form Local Storage function
 getDataFromLocalStorage();
 
 //[5] Delete task
@@ -93,6 +93,7 @@ function addTaskToArray(taskText) {
   // [3] Add Tasks To Page
   addElementsToPageFrom(arrayOfTasks);
 
+  //[4] adding arrayOfTasks to localStorage
   // Add Tasks To localStorage
   // All process that has done on arrayOfTasks array will import to localStorage
   // why we add this function here? => because we target the array
@@ -105,6 +106,10 @@ function addTaskToArray(taskText) {
   console.log(JSON.stringify(arrayOfTasks));
 }
 
+/* --------------------------Functions */
+
+//[3]
+// Add Tasks To Page
 function addElementsToPageFrom(arrayOfTasks) {
   // Empty Task Div
   tasksDiv.innerHTML = "";
@@ -138,7 +143,8 @@ function addElementsToPageFrom(arrayOfTasks) {
   });
 }
 
-//[4] adding arrayOfTasks to localStorage
+//[4]
+// adding arrayOfTasks to localStorage
 function addDataToLocalStorageFrom(arrayOfTasks) {
   // we need to change the array output to sring array that we will use JSON.stringfy
   //  JSON.stringify change the array to string array => without indexes
@@ -146,6 +152,8 @@ function addDataToLocalStorageFrom(arrayOfTasks) {
 }
 // window.localStorage.clear();
 
+//[5]
+// Trigger Get Data Form Local Storage function
 // in this point of process it save the data at local storage
 // at the same time the input.value in array get removed by default of arrayOfTasks = []; it's empty in the first of the page go up
 function getDataFromLocalStorage() {
@@ -153,8 +161,10 @@ function getDataFromLocalStorage() {
   if (data) {
     //here we need to change the string array to normall array
     // we using JSON.parse() to converts string array to normall array
+    // define it here as an array again to get it in localStorage
     let task = JSON.parse(data);
     // console.log(task); // for testing
+    // defined it again after convert it form stringify() to parse() for repeat the same process of creating element in getItem of localStorage
     addElementsToPageFrom(task);
   }
 }
