@@ -44,7 +44,28 @@ console.log(tasksDiv);
 
 // Empty Array To Store The Tasks
 // Using of the variable => if the input is not empty the input.value will go to this variable => array
+/* ********after saving the data by local storage on getDataFromLocalStorage(); 
+after refresh it normally will save data but if we add new value in the input 
+it will remove the previous data bacause the process of this project will back looping 
+from the first and in the first arrayOfTasks = []; is empty that meen the tasks will be removed */
 let arrayOfTasks = [];
+
+// Check if there is tasks in local storage
+if (localStorage.getItem("tasks")) {
+  arrayOfTasks = JSON.parse(localStorage.getItem("tasks"));
+}
+
+// Trigger Get Data Form Local Storage function
+getDataFromLocalStorage();
+
+//[5] Delete task
+tasksDiv.addEventListener("click", (e) => {
+  if (e.target.classList.contains("del")) {
+    // remove parent element form the page
+    e.target.parentElement.remove();
+    deleteTaskWith(e.target.parentElement.getAttribute("data-id"));
+  }
+});
 
 //[1] Add Task
 submit.onclick = function () {
@@ -74,11 +95,13 @@ function addTaskToArray(taskText) {
 
   // Add Tasks To localStorage
   // All process that has done on arrayOfTasks array will import to localStorage
+  // why we add this function here? => because we target the array
   addDataToLocalStorageFrom(arrayOfTasks);
 
   // for testing
   console.log(arrayOfTasks);
   // this will be added to localStorage setItem value
+  // it change the array to string array => without indexes
   console.log(JSON.stringify(arrayOfTasks));
 }
 
@@ -114,11 +137,29 @@ function addElementsToPageFrom(arrayOfTasks) {
     tasksDiv.append(div);
   });
 }
-console.log(Date.now());
 
 //[4] adding arrayOfTasks to localStorage
 function addDataToLocalStorageFrom(arrayOfTasks) {
-  window.localStorage.setItem("tasks", JSON.stringify(arrayOfTasks));
+  // we need to change the array output to sring array that we will use JSON.stringfy
+  //  JSON.stringify change the array to string array => without indexes
+  window.localStorage.setItem("tasks", JSON.stringify(arrayOfTasks)); // adding JSON to access it by localStorage
 }
-// this will be save in local storage as a object
 // window.localStorage.clear();
+
+// in this point of process it save the data at local storage
+// at the same time the input.value in array get removed by default of arrayOfTasks = []; it's empty in the first of the page go up
+function getDataFromLocalStorage() {
+  let data = window.localStorage.getItem("tasks");
+  if (data) {
+    //here we need to change the string array to normall array
+    // we using JSON.parse() to converts string array to normall array
+    let task = JSON.parse(data);
+    // console.log(task); // for testing
+    addElementsToPageFrom(task);
+  }
+}
+
+/* 
+JSON.stringify() => change any method like array or object to string
+JSON.parse() => change any string array or object array to its normal like array or object
+*/
