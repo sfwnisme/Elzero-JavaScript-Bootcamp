@@ -58,22 +58,45 @@ if (localStorage.getItem("tasks")) {
 //[5] Trigger Get Data Form Local Storage function
 getDataFromLocalStorage();
 
-//[5] Delete task
-tasksDiv.addEventListener("click", (e) => {
-  if (e.target.classList.contains("del")) {
-    // remove parent element form the page
-    e.target.parentElement.remove();
-    deleteTaskWith(e.target.parentElement.getAttribute("data-id"));
-  }
-});
-
 //[1] Add Task
-submit.onclick = function () {
+function outPutTask() {
   if (input.value !== "") {
     addTaskToArray(input.value); // add task to array of tasks
     input.value = ""; // Empty input field => after finishing the previous function this code will remove the text from the input
   }
+}
+
+submit.onclick = function () {
+  //[1]
+  outPutTask();
 };
+
+// using ENTER button to output the task
+// solution LINK: "https://www.codegrepper.com/code-examples/javascript/press+enter+on+input+javascript"
+input.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    //[1]
+    outPutTask();
+  }
+});
+
+//[6] Delete task
+// will search for specific selector or attribute
+tasksDiv.addEventListener("click", (e) => {
+  // using this method to find the element
+  if (e.target.classList.contains("del")) {
+    // Second: remove the task from the task => array
+    // remove from localStorage
+    // will target the task by its [id] => [data-id] // will use it as a parameter
+    deleteTaskWith(e.target.parentElement.getAttribute("data-id"));
+
+    // First: remove the task form the DOM
+    // remove parent element form the page
+    // here we targeted the parent container
+    // using .target for the specific element
+    e.target.parentElement.remove();
+  }
+});
 
 //[2] Add Task To Array Using Function
 // addTaskToArray(taskText) => addTaskToArray(input.value) =>> input value will have all the process in this function
@@ -165,6 +188,9 @@ function getDataFromLocalStorage() {
     let task = JSON.parse(data);
     // console.log(task); // for testing
     // defined it again after convert it form stringify() to parse() for repeat the same process of creating element in getItem of localStorage
+    // after reloading the array will be saved as array [let task = JSON.parse(data) => converted to array] to save it in localStorage.getItem
+    // let task = let arrayOfTasks
+    // here will repeat the same process of creating element by addElementsToPageFrom(arrayOfTasks) but change the parameter to (task)
     addElementsToPageFrom(task);
   }
 }
@@ -173,3 +199,17 @@ function getDataFromLocalStorage() {
 JSON.stringify() => change any method like array or object to string
 JSON.parse() => change any string array or object array to its normal like array or object
 */
+
+// [6]
+// Delete Task Function
+function deleteTaskWith(taskId) {
+  // for explain only
+  // for (let i = 0; i < arrayOfTasks.length; i++) {
+  // console.log(`${arrayOfTasks[i].id} === ${taskId}`);
+  // }
+  // console.log(arrayOfTasks[i].id != taskId);
+  arrayOfTasks = arrayOfTasks.filter((task) => task.id != taskId);
+  addDataToLocalStorageFrom(arrayOfTasks);
+}
+
+// localStorage.clear();
