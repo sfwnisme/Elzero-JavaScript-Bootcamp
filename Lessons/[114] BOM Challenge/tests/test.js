@@ -14,7 +14,7 @@ if (window.localStorage.getItem("task")) {
 tasksDiv.addEventListener("click", (e) => {
   if (e.target.classList.contains("del")) {
     e.target.parentElement.remove();
-  } 
+  }
 });
 
 //[5]
@@ -45,7 +45,7 @@ function addTasksToArray(tasksToArray) {
   addTasksToElement(arr);
 
   //[4]
-  addDataToLocalStorage(arr);
+  setDataToLocalStorage(arr);
 }
 
 //[3]
@@ -76,7 +76,7 @@ function addTasksToElement(task) {
 }
 
 //[4]
-function addDataToLocalStorage(arrToLocal) {
+function setDataToLocalStorage(arrToLocal) {
   window.localStorage.setItem("task", JSON.stringify(arrToLocal));
 }
 
