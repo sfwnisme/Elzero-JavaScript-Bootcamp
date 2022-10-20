@@ -58,7 +58,12 @@
     --  overwrite arrayOfTasks => arrayOfTasks = JSON.parse(localStorage.getItem("tasks")); // will bring the data on local storage "data = string" and convert it string > array because it saved on localstorage as a string
         ,then will convert it using JSON.parse()
 
-    [7]
+    [7] delete task => tasksDiv.addEventListener('click', (e) => {block of code})
+    - will apply the function onclicking
+    - if condition => if (e.target.classList.contains("del")) {block of code} // we use this line of code targetting a specific element on tasksDiv
+    --  First: delete task parent from localStorage => deleteTaskWith(e.target.parentElement.getAttribute("data-id")); // use this function to delete the parent element of task that have this attribute by clicking on delete button
+    ----  targetting the element by attribute => getAttribute("data-id"); // element has this attribute
+    --  Second: delete the task from DOM => e.
 */
 
 let input = document.querySelector(".input");
@@ -229,7 +234,7 @@ JSON.stringify() => change any method like array or object to string
 JSON.parse() => change any string array or object array to its normal like array or object
 */
 
-// [6]
+// [7]
 // Delete Task Function
 function deleteTaskWith(taskId) {
   // for explain only
