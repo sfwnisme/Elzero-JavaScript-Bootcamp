@@ -35,6 +35,30 @@
     
     -- append span to div => div.append(span) // display span into div 
     -- append div to tasksDiv => tasksDiv.append(div) // display div to task container
+
+    [4] adding data to localSTorage from arrayOfTasks => addDataToLocalStorageFrom(arrayOfTasks)
+    - the data we need to save is the tasks, then we will use arrayOfTasks as a parameter, because it contains the tasks data
+    - set tasks to localStorage => window.localStorage.setItem("tasks", JSON.stringify(arrayOfTasks));
+    -- convert the arrayOfTasks to string => JSON.stringify(arrayOfTasks) // localStorage needs string to save, we used JSON.stringify() to convert the array to string 
+    
+    [5] get data from localStorage => function getDataFromLocalStorage() // creating function to get the data form localStorage but this function will be on global scope by it self
+    - this function will get the data we set on localStorage 
+    - create variable contains localStorage key getItem("tasks") => let data = window.localStorage.getItem("tasks"); // it will save in data variable then we can using it any where
+    - creating if condition => if(data) {} // if data is true do the block of code.
+    --  create new variable => let task = JSON.parse(data); // this variable contains "let data" variable 
+        and changing it form string to array using "JSON.parse()".
+    --  bring create element function => addElementsToPageForm(task) //
+    ----  we need to add elements to page and create delete button again like the same process of [3] addElementsToPageForm(arrayOTasks)
+    ----  we brought addElementsToPageFrom(task) function again to check it after using JSON.parse(data) only, while we could directly using addElementsToPageFrom(arrayOfTasks) but if there is any problem 
+    - define the the function in in the top of global scope after the arrayOfTasks => getDataFromLocalStorage();
+    - the function will work normally but onreloading the page it will empty the tasks because the arrayOfTasks is empty onloading => let arrayOfTasks = [] // follow the steps to understand how to fix it
+    
+    [6] this condition will save the data of localStorage in the empty array after relaoding
+    - if condition => if(localStorage.getItem("task")) // if it's true do the block of code
+    --  overwrite arrayOfTasks => arrayOfTasks = JSON.parse(localStorage.getItem("tasks")); // will bring the data on local storage "data = string" and convert it string > array because it saved on localstorage as a string
+        ,then will convert it using JSON.parse()
+
+    [7]
 */
 
 let input = document.querySelector(".input");
@@ -50,6 +74,7 @@ it will remove the previous data bacause the process of this project will back l
 from the first and in the first arrayOfTasks = []; is empty that meen the tasks will be removed */
 let arrayOfTasks = [];
 
+//[6]
 // Check if there is tasks in local storage
 if (localStorage.getItem("tasks")) {
   arrayOfTasks = JSON.parse(localStorage.getItem("tasks"));
@@ -61,6 +86,8 @@ getDataFromLocalStorage();
 //[1] Add Task
 function outPutTask() {
   if (input.value !== "") {
+    //[2]
+    // add task to arrayOfTasks variable
     addTaskToArray(input.value); // add task to array of tasks
     input.value = ""; // Empty input field => after finishing the previous function this code will remove the text from the input
   }
@@ -80,7 +107,7 @@ input.addEventListener("keydown", function (e) {
   }
 });
 
-//[6] Delete task
+//[7] Delete task
 // will search for specific selector or attribute
 tasksDiv.addEventListener("click", (e) => {
   // using this method to find the element
@@ -181,17 +208,19 @@ function addDataToLocalStorageFrom(arrayOfTasks) {
 // at the same time the input.value in array get removed by default of arrayOfTasks = []; it's empty in the first of the page go up
 function getDataFromLocalStorage() {
   let data = window.localStorage.getItem("tasks");
+  // addElementsToPageFrom(JSON.parse(window.localStorage.getItem("tasks"))); // we can use this instead of the condition below
   if (data) {
     //here we need to change the string array to normall array
     // we using JSON.parse() to converts string array to normall array
     // define it here as an array again to get it in localStorage
+    // here we check if the data we got from localStrotage.setItem() is match or not, by returning it to its normal
     let task = JSON.parse(data);
     // console.log(task); // for testing
     // defined it again after convert it form stringify() to parse() for repeat the same process of creating element in getItem of localStorage
     // after reloading the array will be saved as array [let task = JSON.parse(data) => converted to array] to save it in localStorage.getItem
     // let task = let arrayOfTasks
     // here will repeat the same process of creating element by addElementsToPageFrom(arrayOfTasks) but change the parameter to (task)
-    addElementsToPageFrom(task);
+    addElementsToPageFrom(task); // also you can use arrayOfTasks instead of task
   }
 }
 
