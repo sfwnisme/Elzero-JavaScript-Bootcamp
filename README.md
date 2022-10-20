@@ -1,6 +1,6 @@
 # JavaScript Bootcamp Content [188 Videos]
 
-![100%](https://progress-bar.dev/100/?title=Watched)
+<!-- ![100%](https://progress-bar.dev/100/?title=Processing) -->
 
 ### Introduction
 
