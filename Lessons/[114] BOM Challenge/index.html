@@ -4,79 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JavaScript</title>
     <style>
       body {
-        background-color: #191725;
-        /* width: 30rem; */
-        display: grid;
-        place-items: center;
-        /* height: 100vh; */
+        font-family: Arial, Helvetica, sans-serif;
       }
-      form {
-        background-color: #474360;
+      .container {
+        width: 400px;
+        margin: 20px auto;
+      }
+      .form {
+        background-color: #eee;
+        border-radius: 6px;
+        padding: 20px;
         display: flex;
-        width: max-content;
-        padding: 1rem;
-        border-radius: 0.3rem;
-        gap: 1rem;
-        width: 30rem;
+        align-items: center;
       }
-      form [type="text"] {
-        /* display: none; */
-        border-radius: 0.3rem;
-        width: 100%;
-        padding: 1rem;
-        border: none;
+      .input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        flex: 1;
       }
-      form [type="submit"] {
-        background-color: orangered;
-        color: white;
-        border: none;
-        border-radius: 0.3rem;
-        padding: 1rem;
-        cursor: pointer;
-      }
-      form input:focus {
+      .input:focus {
         outline: none;
       }
-      ul {
-        background-color: #474360;
-        width: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: initial;
-        gap: 1rem;
-        padding: 1rem;
-        border-radius: 0.3rem;
-      }
-      li {
-        display: flex;
-        justify-content: space-between;
-        list-style: none;
-        background-color: white;
-        color: black;
-        /* width: 100%; */
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-      }
-      li button {
-        background-color: orangered;
-        color: white;
+      .add {
         border: none;
-        border-radius: 0.3rem;
-        padding: 1rem;
+        background-color: #f44336;
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+        margin-left: 10px;
+        cursor: pointer;
+      }
+      .tasks {
+        background-color: #eee;
+        margin-top: 20px;
+        border-radius: 6px;
+        padding: 20px;
+      }
+      .tasks .task {
+        background-color: white;
+        padding: 10px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+      }
+      .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .tasks .task:hover {
+        background-color: #f7f7f7;
+      }
+      .tasks .task.done {
+        opacity: 0.5;
+      }
+      .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 4px;
         cursor: pointer;
       }
     </style>
-    <title>Learn JavaScript</title>
   </head>
   <body>
-    <form action="">
-      <input type="text" data-value="input" />
-      <input type="submit" value="Add Task" data-value="submit" />
-    </form>
-    <ul data-value="ul"></ul>
+    <div class="container">
+      <div class="form">
+        <input type="text" class="input" />
+        <input type="submit" class="add" value="Add Task" />
+      </div>
+      <div class="tasks"></div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
