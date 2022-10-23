@@ -4,25 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style></style>
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Open Sans -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        font-size: 10px;
+      }
+      p {
+        font-family: open sans;
+        font-size: 16px;
+        color: red;
+        margin-top: 100px;
+      }
+    </style>
+    <title>Js Assignment</title>
   </head>
   <body>
     <div class="cont">
-      <select name="fonts" id="fonts">
-        <option value="open-sans">open-sans</option>
-        <option value="cairo">cairo</option>
-        <option value="roboto">roboto</option>
+      <select class="font" name="fonts" id="fonts">
+        <option value="open sans" data-font="open-sans" class="active-font">
+          open-sans
+        </option>
+        <option value="cairo" data-font="cairo">cairo</option>
+        <option value="roboto" data-font="roboto">roboto</option>
       </select>
-      <select name="colors" id="colors">
-        <option value="red" data-color="red">red</option>
-        <option value="blue" data-color="blue">blue</option>
+      <select class="color" name="colors" id="colors">
+        <option value="red" data-color="red" class="active-color">red</option>
+        <option value="skyblue" data-color="skyblue">skyblue</option>
         <option value="green" data-color="green">green</option>
         <option value="orange" data-color="orange">orange</option>
         <option value="yellow" data-color="yellow">yellow</option>
         <option value="brown" data-color="brown">brown</option>
       </select>
+      <select class="size" name="sizes" id="sizes">
+        <option value="16px" class="active-size">16</option>
+        <option value="17px">17</option>
+        <option value="18px">18</option>
+        <option value="19px">19</option>
+        <option value="20px">20</option>
+        <option value="21px">21</option>
+        <option value="22px">22</option>
+        <option value="23px">23</option>
+        <option value="24px">24</option>
+        <option value="25px">25</option>
+        <option value="26px">26</option>
+        <option value="27px">27</option>
+        <option value="28px">28</option>
+        <option value="29px">29</option>
+        <option value="30px">30</option>
+      </select>
     </div>
+    <p>Change me</p>
     <script src="main.js"></script>
   </body>
 </html>
