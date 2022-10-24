@@ -11,7 +11,7 @@ let text = document.querySelector("p");
 console.log(text);
 
 // if condition is the best way to save local storage data on reload or closing site and back to it
-// if (changes()) {
+// if (changing()) {
 //   window.localStorage.getItem("font")
 //     ? (text.style.fontFamily = window.localStorage.font)
 //     : (text.style.fontFamily = "unset");
@@ -37,34 +37,44 @@ console.log(text);
 // };
 
 // if condition is the best way to save local storage data on reload or closing site and back to it
-if (changes()) {
-  window.localStorage.getItem("font");
+// if (changing()) {
+//   window.localStorage.getItem("font");
 
-  window.localStorage.getItem("color");
+//   window.localStorage.getItem("color");
 
-  window.localStorage.getItem("size");
-}
+//   window.localStorage.getItem("size");
+// }
+
+// another way
+// window.onload = () => {
+//   // this code to save the data of the text of <p></p>
+//   // here we confirm the data of the localStorage and saving it
+//   changing();
+// };
+
+//another way to save the data
+changing() ? changing() : "";
 
 font.onchange = function () {
   console.log(font.value);
   window.localStorage.font = font.value;
-  changes();
+  changing();
 };
 
 color.onchange = () => {
   console.log(color.value);
   window.localStorage.color = color.value;
-  changes();
+  changing();
 };
 
 size.onchange = () => {
   console.log(size.value);
   window.localStorage.size = size.value;
-  changes();
+  changing();
 };
 
-function changes() {
-  // text.style.color = color.value;
+function changing() {
+  // save the status and data of the text function
   window.localStorage.getItem("font")
     ? (text.style.fontFamily = window.localStorage.font)
     : (text.style.fontFamily = "unset");
@@ -74,4 +84,17 @@ function changes() {
   window.localStorage.getItem("size")
     ? (text.style.fontSize = window.localStorage.size)
     : (text.style.fontSize = "10px");
+
+  // save <select> status
+  // this way to save the current status of the text in <select>
+  // after reloading the page the properties of the text that we changed from select tages will be saved
+  window.localStorage.font
+    ? (font.value = window.localStorage.font)
+    : (font.value = "initial");
+  window.localStorage.color
+    ? (color.value = window.localStorage.color)
+    : (color.value = "initial");
+  window.localStorage.size
+    ? (size.value = window.localStorage.size)
+    : (size.value = "initial");
 }

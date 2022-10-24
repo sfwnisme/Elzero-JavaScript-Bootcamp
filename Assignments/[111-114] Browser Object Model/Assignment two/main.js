@@ -1,15 +1,43 @@
-let main = document.querySelector("main");
-let h2 = document.querySelector("h2");
-let p = document.querySelector("p");
-let div = document.querySelector("div");
+let text = document.querySelector(".text");
+let email = document.querySelector(".email");
+let search = document.querySelector(".search");
+let inputs = document.querySelectorAll("input");
+let select = document.querySelector("select");
+console.log(inputs);
 
 window.onload = () => {
-  setTimeout(() => {
-    main.style.display = "block";
-  }, 3000);
+  getting();
 };
-div.addEventListener("click", () => {
-  main.style.display = "none";
-});
 
-console.log(div);
+text.oninput = () => {
+  window.sessionStorage.setItem("text", text.value);
+  getting();
+};
+
+email.oninput = () => {
+  window.sessionStorage.email = email.value;
+  getting();
+};
+
+search.oninput = () => {
+  window.sessionStorage.search = search.value;
+  getting();
+};
+
+select.oninput = () => {
+  window.sessionStorage.select = select.value;
+  getting();
+};
+
+window.onload = () => {
+  window.sessionStorage.text ? (text.value = window.sessionStorage.text) : "";
+  window.sessionStorage.email
+    ? (email.value = window.sessionStorage.email)
+    : "";
+  window.sessionStorage.search
+    ? (search.value = window.sessionStorage.search)
+    : "";
+  window.sessionStorage.select
+    ? (select.value = window.sessionStorage.select)
+    : "";
+};
