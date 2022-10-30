@@ -3,7 +3,7 @@
   - Challenge
 */
 
-let chosen = 2;
+let chosen = 0;
 
 let myFriends = [
   { title: "Osama", age: 39, available: true, skills: ["HTML", "CSS"] },
@@ -12,31 +12,19 @@ let myFriends = [
 ];
 
 for (let i = 0; i < myFriends.length; i++) {
-  // console.log(myFriends[i][chosen]);
-  // console.log(myFriends[chosen]);
-  if (myFriends[i] === myFriends[chosen]) {
+  if (myFriends[i] === myFriends[chosen - 1]) {
     console.log(myFriends[i]);
-    // const [{ title }] = myFriends[i];
-    // console.log(title);
+    const {
+      title,
+      age,
+      available,
+      skills: [a, b],
+    } = myFriends[i];
+    console.log(`${title} ${age} ${available ? available : ""} ${`${a} ${b}`}`);
   }
 }
-
-for (friend of myFriends) {
-  console.log(myFriends);
-  if (myFriends[chosen]) {
-    console.log("kd");
-  }
+if (chosen > myFriends.length) {
+  console.log(`No One Wanna Work With You😊`);
+} else if (chosen <= 0) {
+  console.log(`No One Available For You👌`);
 }
-
-// if (myFriends[chosen]) {
-//   console.log(myFriends[chosen]);
-//   // const [{title}] = myFriends[chosen];
-//   // const [{ title }] = myFriends[chosen];
-//   // console.log(title);
-// } else {
-//   console.log("Nothing");
-// }
-
-// function details([{ title }] = myFriends) {
-//   console.log(title);
-// }
