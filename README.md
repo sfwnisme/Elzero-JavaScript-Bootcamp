@@ -151,14 +151,14 @@
 
 ### Destructuring
 
-- [ ] `Processing` -115- Destructuring Arrays Part 1
-- [ ] `Processing` -116- Destructuring Arrays Part 2
-- [ ] `Processing` -117- Destructuring Arrays Part 3 Swap Variables
-- [ ] `Processing` -118- Destructuring Object Part 1
-- [ ] `Processing` -119- Destructuring Object Part 2
-- [ ] `Processing` -120- Destructuring Function Parameters
-- [ ] `Processing` -121- Destructuring Mixed Content
-- [ ] `Processing` -122- Destructuring Challenge
+- [x] `Watched` -115- Destructuring Arrays Part 1
+- [x] `Watched` -116- Destructuring Arrays Part 2
+- [x] `Watched` -117- Destructuring Arrays Part 3 Swap Variables
+- [x] `Watched` -118- Destructuring Object Part 1
+- [x] `Watched` -119- Destructuring Object Part 2
+- [x] `Watched` -120- Destructuring Function Parameters
+- [x] `Watched` -121- Destructuring Mixed Content
+- [x] `Watched` -122- Destructuring Challenge
 
 ### More Methods And New Data Types
 
