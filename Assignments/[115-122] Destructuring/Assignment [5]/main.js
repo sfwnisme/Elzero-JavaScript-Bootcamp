@@ -26,7 +26,7 @@ const [o, a, or] = obj;
 //
 // saving the values of the object properties in a variable
 let obj2 = Object.values(releases);
-console.log(obj2);
+console.log(obj2); // test
 const [[u, j], { US: u_price, JAP: j_price }] = obj2;
 console.log(`My Best Release Is ${o} It Released in ${u} & ${j}`);
 // My Best Release Is Oath In Felghana It Released in USA & Japan
