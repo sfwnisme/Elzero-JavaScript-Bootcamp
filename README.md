@@ -13,6 +13,7 @@
 - [x] `Watched` -007- Output To Screen
 - [x] `Watched` -008- Console Methods And Styling And WebAPI
 - [x] `Watched` -009- What Is ECMAScript ?
+- [x] `Done` -[001-009]- Assingments
 
 ### Data Types And Variables
 
