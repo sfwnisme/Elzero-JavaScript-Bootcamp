@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  font-family: consolas;
+  text-align: center;
+}
+h1 {
+  color: white;
+  text-align: center;
+}
+h3,
+q {
+  color: gold;
+}
+select {
+  background-color: rgb(255, 119, 0);
+  color: white;
+  inline-size: auto;
+  block-size: auto;
+  padding-block: 10px;
+  padding-inline: 10px;
+  border: none;
+  border-radius: 2px;
+}
+select:focus {
+  border: none;
+  outline: none;
+}
