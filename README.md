@@ -2,8 +2,6 @@
 
 ## Stared Since 2022-5-15
 
-<!-- ![100%](https://progress-bar.dev/100/?title=Processing) -->
-
 ### Introduction
 
 - [x] `Watched` -001- Introduction And What Is JavaScript ?
