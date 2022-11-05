@@ -165,8 +165,8 @@
 - [x] `Processing` -123- Set Data Type And Methods
 - [x] `Processing` -124- Set vs WeakSet And Garbage Collector
 - [x] `Processing` -125- Map Data Type vs Object Full Comparison
-- [ ] `Processing` -126- Map Methods
-- [ ] `Processing` -127- Map vs WeakMap
+- [x] `Processing` -126- Map Methods
+- [x] `Processing` -127- Map vs WeakMap
 - [ ] `Processing` -128- Array.from Method
 - [ ] `Processing` -129- Array.copyWithin Method
 - [ ] `Processing` -130- Array.some Method
