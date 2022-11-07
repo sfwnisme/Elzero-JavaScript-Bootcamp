@@ -1,6 +1,6 @@
 /* 
   Array Methods
-  - Array.from(Iterable, Mapfunc, This)
+  - Array.from(Iterable, Mapfunction, This)
   --- Variable
   --- String Numbers
   --- Set
@@ -10,11 +10,11 @@
 */
 
 console.log(Array.from("osama"));
+// must use return
 console.log(Array.from("1341245", function (n) {
   return +n + +n;
 }));
 console.log(Array.from("1341245",(n)=> +n + +n));
-
 
 let myArray = [1,1,1,2,3,4];
 
