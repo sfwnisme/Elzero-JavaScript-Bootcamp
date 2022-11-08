@@ -1,6 +1,6 @@
 # JavaScript Bootcamp Content [188 Videos]
 
-## Started Html & Css On 2021-7-10
+## Started Fornt End Road Map On 2021-7-10
 
 ## Finished Html & Css With Practice On 2022-5-1
 
@@ -171,9 +171,9 @@
 - [x] `Processing` -125- Map Data Type vs Object Full Comparison
 - [x] `Processing` -126- Map Methods
 - [x] `Processing` -127- Map vs WeakMap
-- [ ] `Processing` -128- Array.from Method
-- [ ] `Processing` -129- Array.copyWithin Method
-- [ ] `Processing` -130- Array.some Method
+- [x] `Processing` -128- Array.from Method
+- [x] `Processing` -129- Array.copyWithin Method
+- [x] `Processing` -130- Array.some Method
 - [ ] `Processing` -131- Array.every Method
 - [ ] `Processing` -132- Spread Syntax And Use Cases
 - [ ] `Processing` -133- Section Challenge
