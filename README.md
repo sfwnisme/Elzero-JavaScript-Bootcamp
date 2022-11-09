@@ -166,14 +166,14 @@
 
 ### More Methods And New Data Types
 
-- [x] `Processing` -123- Set Data Type And Methods
-- [x] `Processing` -124- Set vs WeakSet And Garbage Collector
-- [x] `Processing` -125- Map Data Type vs Object Full Comparison
-- [x] `Processing` -126- Map Methods
-- [x] `Processing` -127- Map vs WeakMap
-- [x] `Processing` -128- Array.from Method
-- [x] `Processing` -129- Array.copyWithin Method
-- [x] `Processing` -130- Array.some Method
+- [x] `Watched` -123- Set Data Type And Methods
+- [x] `Watched` -124- Set vs WeakSet And Garbage Collector
+- [x] `Watched` -125- Map Data Type vs Object Full Comparison
+- [x] `Watched` -126- Map Methods
+- [x] `Watched` -127- Map vs WeakMap
+- [x] `Watched` -128- Array.from Method
+- [x] `Watched` -129- Array.copyWithin Method
+- [x] `Watched` -130- Array.some Method
 - [ ] `Processing` -131- Array.every Method
 - [ ] `Processing` -132- Spread Syntax And Use Cases
 - [ ] `Processing` -133- Section Challenge
