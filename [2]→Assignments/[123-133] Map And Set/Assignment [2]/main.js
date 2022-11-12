@@ -1,13 +1,5 @@
-let mySkills = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  ["PHP", "Python", ["Django", "Laravel"]],
-];
+let myFriends = ["Osama", "Ahmed", "Sayed", "Sayed", "Mahmoud", "Osama"];
 
-// Write Your Destructuring Assignment Here
-[a, b, c, [d, e, [f, g]]] = mySkills;
-
-console.log(`My Skills: ${a}, ${b}, ${c}, ${d}, ${e}, ${f}, ${g}`);
-
-// My Skills: HTML, CSS, JavaScript, PHP, Python, Django, Laravel
+// Needed Output
+console.log(new Set(myFriends.sort()))
+// (4) ['Ahmed', 'Mahmoud', 'Osama', 'Sayed']
