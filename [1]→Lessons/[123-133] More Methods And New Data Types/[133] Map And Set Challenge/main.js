@@ -17,14 +17,25 @@
 let n1 = [10, 30, 10, 20];
 let n2 = [30, 20, 10];
 
-console.log(new Set(n1))
-console.log(new Set(n2))
+console.log(new Set(n1));
+console.log(new Set(n2));
 
-// Data Type => String
-// console.log(...new Set([`${Math.max([Number(...n1.pop().toString())]).toString()}${n2.pop().toString()}`])); // 210
+// Solution One
+console.log(parseInt(`${n2.indexOf(Math.min(...n2))}${Math.min(...n1)}`)); // Output => 210
 
-// Data Type => Number
-console.log(...new Set([Number(`${Math.max([Number(...n1.pop().toString())])}${n2.pop()}`)])); // 210
+// Solution Two
+console.log(Math.max(...n2)); // test
+console.log([...n1, ...n2].length); // test
+console.log([...n1, ...n2].length * Math.max(...n2)); //210
+
+
+
+// Solution Three
+console.log(
+  ...new Set([
+    Number(`${Math.max([Number(...n1.pop().toString())])}${n2.pop()}`),
+  ])
+); // 210
 
 /* 
   [1] 
