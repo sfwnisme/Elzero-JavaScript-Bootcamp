@@ -174,9 +174,9 @@
 - [x] `Watched` -128- Array.from Method
 - [x] `Watched` -129- Array.copyWithin Method
 - [x] `Watched` -130- Array.some Method
-- [ ] `Processing` -131- Array.every Method
-- [ ] `Processing` -132- Spread Syntax And Use Cases
-- [ ] `Processing` -133- Section Challenge
+- [X] `Processing` -131- Array.every Method
+- [X] `Processing` -132- Spread Syntax And Use Cases
+- [X] `Processing` -133- Set And Map Challenge
 
 ### Regular Expressions
 
