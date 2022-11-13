@@ -15,7 +15,6 @@ let arr2 = [];
 for(let i of theName) {
   arr2.push(i);
 }
-console.log(arr2)
 
 // Needed Output
 // ['E', 'l', 'z', 'e', 'r', 'o']
