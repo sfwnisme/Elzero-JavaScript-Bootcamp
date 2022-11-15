@@ -1,16 +1,18 @@
 let numsOne = [1, 2, 3];
 let numsTwo = [4, 5, 6];
 
-console.log(numsOne.concat(numsTwo));
-console.log([...numsOne,...numsTwo]);
-// console.log();
+// Solution One
+console.log(numsOne.concat(numsTwo)); // [1, 2, 3, 4, 5, 6]
 
-const merged = numsTwo.reduce((arr, item) => {
+// Solution Two
+console.log([...numsOne, ...numsTwo]); // [1, 2, 3, 4, 5, 6]
+
+// Solution Three
+const m = numsTwo.reduce((arr, item) => {
   arr.push(item);
-  return arr;    
+  return arr;
 }, numsOne);
-
-console.log(merged);
+console.log(m); // [1, 2, 3, 4, 5, 6]
 
 // Needed Output
 // [1, 2, 3, 4, 5, 6]
