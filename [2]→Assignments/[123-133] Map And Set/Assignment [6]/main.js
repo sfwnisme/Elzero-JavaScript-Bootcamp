@@ -1,20 +1,24 @@
-let theName = "Elzero";
+let chars = ["A", "B", "C", "D", "E", 10, 15, 6, 5, 5];
+// console.log(chars.copyWithin(3,4,5))
+// let a = chars.filter((e) => parseInt(e));
+// console.log(a.sort());
+chars.sort();
 
-console.log([...theName]);
-console.log(Array.from(theName));
-console.log([...new Set(theName)]);
-console.log(theName.split(""));
-console.log(Object.assign([], theName));
-let arr = [];
-for(let i = 0; i < theName.length; i++) {
-  arr.push(theName[i]);
-}
-console.log(arr)
+let filterdSt = chars.filter((e) => typeof e === "string");
+let filterdNum = chars.filter((e) => typeof e === "number");
 
-let arr2 = [];
-for(let i of theName) {
-  arr2.push(i);
-}
+let finalFilter = [...filterdSt, ...filterdNum];
+console.log(finalFilter)
+let counter = 0;
+chars.map((el) => (typeof el === "number" ? counter++ : ""));
+
+console.log(counter);
+
+finalFilter.copyWithin(counter, 0);
+
+console.log(finalFilter);
+
+// console.log(chars.copyWithin(0))
 
 // Needed Output
-// ['E', 'l', 'z', 'e', 'r', 'o']
+// ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
