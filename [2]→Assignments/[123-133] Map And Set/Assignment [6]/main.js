@@ -1,24 +1,30 @@
-let chars = ["A", "B", "C", "D", "E", 10, 15, 6, 5, 5];
-// console.log(chars.copyWithin(3,4,5))
-// let a = chars.filter((e) => parseInt(e));
-// console.log(a.sort());
+// let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
+// let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
+let chars = ["Z", "Y", "A", "D", "E", 10, 1];
 chars.sort();
+console.log(chars); // confirm the sorting
 
-let filterdSt = chars.filter((e) => typeof e === "string");
-let filterdNum = chars.filter((e) => typeof e === "number");
+// Solution One
+/* 
+let nums = chars.filter((e) => typeof e === "number");
+console.log(nums);
 
-let finalFilter = [...filterdSt, ...filterdNum];
-console.log(finalFilter)
-let counter = 0;
-chars.map((el) => (typeof el === "number" ? counter++ : ""));
+let str = chars.filter((e) => typeof e === "string");
+console.log(str);
 
-console.log(counter);
+let mix = [...nums, ...str];
+console.log(mix);
 
-finalFilter.copyWithin(counter, 0);
-
-console.log(finalFilter);
-
+console.log(mix.copyWithin(0, nums.length));
+ */
 // console.log(chars.copyWithin(0))
+
+// Solution Two
+// filter numbers and get them length to use it as a start for copyWithin method
+// it will dynamically replace numbers to strings
+let nums = chars.filter((e) => typeof e === "number").length;
+
+console.log(chars.copyWithin(0, nums));
 
 // Needed Output
 // ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
