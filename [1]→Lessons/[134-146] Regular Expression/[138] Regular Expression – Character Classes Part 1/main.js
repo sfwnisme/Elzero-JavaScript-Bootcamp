@@ -11,6 +11,7 @@
 */
 
 let email = 'O@@@g...com _ O@g.com O@g.net A@Y.com O-g.com o@s.org 1@1.com';
-// let dot = /\s/g;
+let dot = /\W/g;
+console.log(email.match(dot))
 let mail = /\w@\D.(com|net)/g;
 console.log(email.match(mail));
