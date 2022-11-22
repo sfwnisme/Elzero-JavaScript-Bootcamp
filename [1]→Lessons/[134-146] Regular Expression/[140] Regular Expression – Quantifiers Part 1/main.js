@@ -30,7 +30,3 @@ console.log(nums.match(numsR)); // ['0110', '05120', '0560', '00']
 let urlsRe = /(https?:\/\/)?(www.)?\w+.\w+/ig;
 console.log(urls.match(urlsRe));
 
-
-let nam = "safwan";
-let re = /safwaN/ig;
-console.log(nam.match(re));
