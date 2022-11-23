@@ -19,7 +19,6 @@
 
 */
 
-
 let myString = "AaBbcdefG123!234%^&*";
 let atozSmall =/[a-z]/g;
 let NotAtozSmall =/[^a-z]/g;
@@ -29,7 +28,7 @@ let aAndcAnde = /a|c|e/g;
 let NotaAndcAnde =/[^a c e]/g;
 let lettersCapsAndSmall = /[a-z A-Z]/g;
 let numsAndSpecials =/[^a-zA-Z]/g;
-let specials =/[^a-z 1-9]/ig;
+let specials =/[^a-z1-9]/ig;
 console.log(myString.match(atozSmall));
 console.log(myString.match(NotAtozSmall));
 console.log(myString.match(atozCapital));

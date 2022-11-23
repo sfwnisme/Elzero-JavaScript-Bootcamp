@@ -1,3 +1,8 @@
+/*
+  Regular Expression
+  - Input Form Validation Practice
+*/
+
 document.getElementById("register").onsubmit = function () {
   let phone = document.getElementById("phone").value;
   let phoneRe = /\(\d{4}\) \d{3}-\d{4}/gi; // (1234) 567-8910
