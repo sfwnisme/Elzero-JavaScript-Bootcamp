@@ -3,8 +3,8 @@
 
   Quantifiers
   n+    => ONe Or More
-  n*    -> zero or more
-  n?    +> zero or one
+  n*    => zero or more
+  n?    => zero or one
 */
 
 let mails = " o@nn.sa osamaWggmail.com elzero@gmail.net osama@mail.ru"; // All Emails
