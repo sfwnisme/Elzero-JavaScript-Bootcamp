@@ -1,30 +1,13 @@
-// let chars = ["A", "B", "C", "D", "E", 10, 15, 6];
-// let chars = ["A", "B", "C", 20, "D", "E", 10, 15, 6];
-let chars = ["Z", "Y", "A", "D", "E", 10, 1];
-chars.sort();
-console.log(chars); // confirm the sorting
+let url1 = 'elzero.org';
+let url2 = 'http://elzero.org';
+let url3 = 'https://elzero.org';
+let url4 = 'https://www.elzero.org';
+let url5 = 'https://www.elzero.org:8080/articles.php?id=100&cat=topics';
 
-// Solution One
-/* 
-let nums = chars.filter((e) => typeof e === "number");
-console.log(nums);
+let re = /(https?:\/\/)?(www.)?\w+.(org):?\d*\/?(\w+.)?(\w+)?(\?\w+)?\D?((\w+|\W+)+)?/; // Write Your Pattern Here
 
-let str = chars.filter((e) => typeof e === "string");
-console.log(str);
-
-let mix = [...nums, ...str];
-console.log(mix);
-
-console.log(mix.copyWithin(0, nums.length));
- */
-// console.log(chars.copyWithin(0))
-
-// Solution Two
-// filter numbers and get them length to use it as a start for copyWithin method
-// it will dynamically replace numbers to strings
-let nums = chars.filter((e) => typeof e === "number").length;
-
-console.log(chars.copyWithin(0, nums));
-
-// Needed Output
-// ['A', 'B', 'C', 'A', 'B', 'C', 'D', 'E']
+console.log(url1.match(re));
+console.log(url2.match(re));
+console.log(url3.match(re));
+console.log(url4.match(re));
+console.log(url5.match(re));
