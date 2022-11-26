@@ -1,20 +1,12 @@
-let theName = "Elzero";
+let date1 = '25/10/1982';
+let date2 = '25 - 10 - 1982';
+let date3 = '25 10 1982';
+let date4 = '25 10 82';
 
-console.log([...theName]);
-console.log(Array.from(theName));
-console.log([...new Set(theName)]);
-console.log(theName.split(""));
-console.log(Object.assign([], theName));
-let arr = [];
-for(let i = 0; i < theName.length; i++) {
-  arr.push(theName[i]);
-}
-console.log(arr)
+// let re = /\d*(\W+)\d*\W+\d*/g; // Write Pattern Here
+let re = /\d*\W+\d*\D*\w+/g; // Write Pattern Here
 
-let arr2 = [];
-for(let i of theName) {
-  arr2.push(i);
-}
-
-// Needed Output
-// ['E', 'l', 'z', 'e', 'r', 'o']
+console.log(...date1.match(re)); // "25/10/1982"
+console.log(...date2.match(re)); // "25 - 10 - 1982"
+console.log(...date3.match(re)); // "25 10 1982"
+console.log(...date4.match(re)); // "25 10 82"
