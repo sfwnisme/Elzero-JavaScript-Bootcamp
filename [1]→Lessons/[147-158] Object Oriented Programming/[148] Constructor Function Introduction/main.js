@@ -2,10 +2,10 @@
   Constructor Function
 */
 
-function User(id, userName, salary) {
+function User(id, username, salary) {
   this.id = id;
-  this.userName = userName;
-  this.salary = salary;
+  this.userName = username;
+  this.salary = salary + 299;
 }
 
 let userOne = new User(100, 'Osama', 2000);
