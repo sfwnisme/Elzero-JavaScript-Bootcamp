@@ -198,7 +198,7 @@
 
 - [x] `Watched` -147- Object Oriented Programming Introduction
 - [x] `Watched` -148- Constructor Function Introduction
-- [ ] `Processing` -149- Constructor Function New Syntax
+- [x] `Processing` -149- Constructor Function New Syntax
 - [ ] `Processing` -150- Constructor Function Deal With Properties & Methods
 - [ ] `Processing` -151- Constructor Function Update Properties & Built In Constructors
 - [ ] `Processing` -152- Class Static Properties And Methods
