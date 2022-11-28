@@ -174,30 +174,30 @@
 - [x] `Watched` -128- Array.from Method
 - [x] `Watched` -129- Array.copyWithin Method
 - [x] `Watched` -130- Array.some Method
-- [X] `Processing` -131- Array.every Method
-- [X] `Processing` -132- Spread Syntax And Use Cases
-- [X] `Processing` -133- Set And Map Challenge
+- [X] `Watched` -131- Array.every Method
+- [X] `Watched` -132- Spread Syntax And Use Cases
+- [X] `Watched` -133- Set And Map Challenge
 
 ### Regular Expressions
 
-- [ ] `Processing` -134- Intro And What Is Regular Expression ?
-- [ ] `Processing` -135- RegExp Modifiers
-- [ ] `Processing` -136- RegExp Ranges Part 1
-- [ ] `Processing` -137- RegExp Ranges Part 2
-- [ ] `Processing` -138- RegExp Character Classes Part 1
-- [ ] `Processing` -139- RegExp Character Classes Part 2
-- [ ] `Processing` -140- RegExp Quantifiers Part 1
-- [ ] `Processing` -141- RegExp Quantifiers Part 2
-- [ ] `Processing` -142- RegExp Quantifiers Part 3
-- [ ] `Processing` -143- Replace With The RegExp Pattern
-- [ ] `Processing` -144- Form Validation Practice
-- [ ] `Processing` -145- Test Your RegExp And Discussions
-- [ ] `Processing` -146- RegExp Challenge
+- [x] `Watched` -134- Intro And What Is Regular Expression ?
+- [x] `Watched` -135- RegExp Modifiers
+- [x] `Watched` -136- RegExp Ranges Part 1
+- [x] `Watched` -137- RegExp Ranges Part 2
+- [x] `Watched` -138- RegExp Character Classes Part 1
+- [x] `Watched` -139- RegExp Character Classes Part 2
+- [x] `Watched` -140- RegExp Quantifiers Part 1
+- [x] `Watched` -141- RegExp Quantifiers Part 2
+- [x] `Watched` -142- RegExp Quantifiers Part 3
+- [x] `Watched` -143- Replace With The RegExp Pattern
+- [x] `Watched` -144- Form Validation Practice
+- [x] `Watched` -145- Test Your RegExp And Discussions
+- [x] `Watched` -146- RegExp Challenge
 
 ### Object Oriented Programming
 
-- [ ] `Processing` -147- Object Oriented Programming Introduction
-- [ ] `Processing` -148- Constructor Function Introduction
+- [x] `Watched` -147- Object Oriented Programming Introduction
+- [x] `Watched` -148- Constructor Function Introduction
 - [ ] `Processing` -149- Constructor Function New Syntax
 - [ ] `Processing` -150- Constructor Function Deal With Properties & Methods
 - [ ] `Processing` -151- Constructor Function Update Properties & Built In Constructors
