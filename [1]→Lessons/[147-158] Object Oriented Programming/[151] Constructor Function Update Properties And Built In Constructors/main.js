@@ -45,8 +45,8 @@ let str2 = 'Elzero';
 console.log(typeof str1); // object => due to new String() method
 console.log(typeof str2); // string => normal string syntax
 
-console.log(str1 instanceof String); // true => Constructor only accepts Object
-console.log(str2 instanceof String); // false => Constructor not accepts Stirng
+console.log(str1 instanceof String); // true => it instance because it's => Object
+console.log(str2 instanceof String); // false => it not instance because it's not Object => Stirng
 
-console.log(str1.constructor === String); // ture => Constructor only accepts Objects
-console.log(str2.constructor === String); // false => constructor not accepts Strings
+console.log(str1.constructor === String); // ture => the constructor inclueds it
+console.log(str2.constructor === String); // true => the constructor inclueds it
