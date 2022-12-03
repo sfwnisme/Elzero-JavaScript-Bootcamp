@@ -5,29 +5,28 @@
 */
 
 class User {
-  constructor(id, username, salary) {
+  constructor(id, username) {
     this.i = id;
     this.u = username;
-    this.s = salary;
   }
   sayHello() {
     return `Hello ${this.u}`;
   }
 }
 
-let userOne = new User(23, "sfwnisme", 2000);
+let userOne = new User(100, "Elzero");
 console.log(userOne.u);
+console.log(User.prototype);
+console.log(userOne);
 
 User.prototype.sayWelcome = function () {
-  return `Wellcome`;
-};
-console.log(User.prototype);
-
-console.log(userOne.sayWelcome());
-
-Object.prototype.love = () => {
-  return `I can not love you`;
+  return `Welcome ${this.u}`;
 };
 
-String.prototype.stringTest = () => `Raise your hand I had known prototype`;
-console.log("kk".stringTest());
+Object.prototype.love = "Elzero Web School";
+
+String.prototype.addDotBeforeAndAfter = function (val) {
+  return `.${this}.`;
+};
+
+let myString = "Elzero";
