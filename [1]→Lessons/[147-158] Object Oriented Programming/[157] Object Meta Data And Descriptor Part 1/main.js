@@ -21,7 +21,7 @@ Object.defineProperty(myObject, "c", {
 myObject.c = 23;
 
 // configurable: true, => you can modify, delete, and redefine the property
-console.log(delete myObject.c)
+console.log(delete myObject.c); // delete the test to display Object.c
 
 // enumerable: true, => you can loop it
 for (let prop in myObject) {
