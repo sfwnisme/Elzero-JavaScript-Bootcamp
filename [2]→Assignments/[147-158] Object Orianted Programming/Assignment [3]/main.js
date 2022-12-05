@@ -1,22 +1,23 @@
 // Edit The Class
 class User {
+  #c;
   constructor(username, card) {
     this.u = username;
-    this.c = card;
+    this.#c = card;
   }
   // first solution
+  get cardNum() {
+    return this.#c.toString().replace(/(\d{4})(\d{4})(\d{4})(\d{4})/g, "$1-$2-$3-$4");
+  }
   get showData() {
-    this.c = this.c
-      .toString()
-      .replace(/(\d{4})(\d{4})(\d{4})(\d{4})/g, "$1-$2-$3-$4");
     // $1 stands for group number 1 and $2 for group number 2 and so on...
-    return `Hello ${this.u}, Your Credit Card Number is ${this.c}`;
+    return `Hello ${this.u}, Your Credit Card Number is ${this.cardNum}`;
   }
 
   // second solution
   // get showData() {
-  //   this.c = this.c.toString().match(/\d{4}/ig).join("-");
-  //   return `Hello ${this.u}, Your Credit Card Number is ${this.c}`;
+  //   this.#c = this.#c.toString().match(/\d{4}/ig).join("-");
+  //   return `Hello ${this.u}, Your Credit Card Number is ${this.#c}`;
   // }
 }
 
@@ -34,6 +35,6 @@ console.log(userTwo.showData);
 
 console.log(userThree.showData);
 // Hello Ghareeb Your Credit Card Number Is 1234-5678-1234-5678
-let cRe = //ig;
-  console.log(userOne.c); // Prevent Accessing To Card Property Here
+
+console.log(userOne.c); // Prevent Accessing To Card Property Here
 // Undefined
