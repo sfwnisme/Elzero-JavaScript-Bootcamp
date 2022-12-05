@@ -28,5 +28,3 @@ Object.prototype.love = "Elzero Web School";
 String.prototype.addDotBeforeAndAfter = function (val) {
   return `.${this}.`;
 };
-
-let myString = "Elzero";

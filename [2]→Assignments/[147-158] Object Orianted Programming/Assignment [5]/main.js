@@ -1,12 +1,36 @@
-let date1 = '25/10/1982';
-let date2 = '25 - 10 - 1982';
-let date3 = '25 10 1982';
-let date4 = '25 10 82';
+const myObj = {
+  username: "Elzero",
+  id: 100,
+  score: 1000,
+  country: "Egypt",
+};
 
-// let re = /\d*(\W+)\d*\W+\d*/g; // Write Pattern Here
-let re = /\d*\W+\d*\D*\w+/g; // Write Pattern Here
+delete myObj.country;
 
-console.log(...date1.match(re)); // "25/10/1982"
-console.log(...date2.match(re)); // "25 - 10 - 1982"
-console.log(...date3.match(re)); // "25 10 1982"
-console.log(...date4.match(re)); // "25 10 82"
+// Write Your Code Here
+Object.defineProperties(myObj, {
+  id: {
+    writable: true,
+    enumerable: false,
+    configurable: true,
+  },
+  score: {
+    writable: false,
+    enumerable: true,
+    configurable: true,
+  },
+});
+
+myObj.score = 500;
+
+for (let prop in myObj) {
+  console.log(`${prop} => ${myObj[prop]}`);
+}
+
+console.log(myObj);
+
+// Needed Output
+
+// ("username => Elzero");
+// ("score => 1000");
+// {username: 'Elzero', score: 1000, id: 100}

@@ -3,5 +3,5 @@
 
 // Do Not Edit Below
 let myStr = "Elzero";
-Object.prototype.addLove = () => "I Love Elzero Web School";
+Object.prototype.addLove = () => `I Love ${myStr} Web School`;
 console.log(myStr.addLove()); // I Love Elzero Web School
