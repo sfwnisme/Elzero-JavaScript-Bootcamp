@@ -68,6 +68,7 @@ console.log(student3.firstName);
 // Object.defineProperties()
 const student4 = {
   firstName: "Sfwn",
+  lastName: "mo",
 };
 
 Object.defineProperties(student4, {
@@ -92,4 +93,5 @@ console.log(student4.getName);
 console.log(student4.sayHello);
 
 student4.changeName = "tariq";
-console.log(student4.firstName)
+console.log(student4.firstName);
+console.log(student4.lastName)
