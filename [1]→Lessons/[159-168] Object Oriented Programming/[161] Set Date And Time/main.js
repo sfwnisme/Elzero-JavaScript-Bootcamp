@@ -1,55 +1,34 @@
-/* 
-  Constructor Function
+/*
+  Date And Time
+  - setTime(Milliseconds)
+  - setDate() => Day Of The Month [Negative And Positive]
+  - setFullYear(year, month => Optional [0-11], day => Optional [1-31])
+  - setMonth(Month [0-11], Day => Optional [1-31]) [Negative And Positive]
+  - setHours(Hours [0-23], Minutes => Optional [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+  - setMinutes(Minutes [0-59], Seconds => Optional [0-59], MS => Optional [0-999])
+  - setSeconds(Seconds => [0-59], MS => Optional [0-999])
 */
 
-function User(id, username, salary) {
-  this.id = id;
-  this.userName = username;
-  this.salary = salary + 299;
-}
+let dateNow = new Date();
+console.log(dateNow);
 
-let userOne = new User(100, 'Osama', 2000);
-console.log(userOne.id);
-console.log(userOne.userName);
-console.log(userOne.salary);
-console.log(Object.keys(userOne).join(" - "))
+console.log("#".repeat(66));
 
-let userTwo = new User(101, 'Ali', 3000);
-console.log(userTwo.id);
-console.log(userTwo.userName);
-console.log(userTwo.salary);
+// dateNow.setTime(0);
+// console.log(dateNow);
 
-let userThree = new User(102, 'Sayed', 4000);
-console.log(userThree.id);
-console.log(userThree.userName);
-console.log(userThree.salary);
-/* 
-let userOne = {
-  id: 100,
-  userName: "Osama",
-  salary: 2000,
-};
+// console.log("#".repeat(66));
 
-console.log(userOne.id);
-console.log(userOne.userName);
-console.log(userOne.salary);
+// dateNow.setTime(10000);
+// console.log(dateNow);
 
-let userTwo = {
-  id: 101,
-  userName: "Ali",
-  salary: 3000,
-};
-console.log(userTwo.id);
-console.log(userTwo.userName);
-console.log(userTwo.salary);
+// console.log("#".repeat(66));
 
-let userThree = {
-  id: 102,
-  userName: "Sayed",
-  salary: 4000,
-};
+// dateNow.setDate(35);
+// console.log(dateNow);
 
-console.log(userThree.id);
-console.log(userThree.userName);
-console.log(userThree.salary);
- */
+// dateNow.setFullYear(2020, 13);
+// console.log(dateNow);
+
+dateNow.setMonth(15);
+console.log(dateNow);
