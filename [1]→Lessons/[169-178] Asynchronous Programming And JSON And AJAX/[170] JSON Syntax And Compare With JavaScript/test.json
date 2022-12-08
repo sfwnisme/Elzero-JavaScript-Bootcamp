@@ -1,0 +1,11 @@
+{
+  "name": "Sfwn",
+  "number": 24,
+  "object": {
+    "EG": "Giza",
+    "KSA": "Riyadh"
+  },
+  "array": ["HTML", "CSS", "JS"],
+  "boolean": true,
+  "null": null
+}

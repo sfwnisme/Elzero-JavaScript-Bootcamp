@@ -1,26 +1,17 @@
 /*
-  Date And Time
-  - getTime() => Number Of Milliseconds
-  - getDate() => Day Of The Month
-  - getFullYear()
-  - getMonth() => Zero Based
-  - getDay() => Day Of The Week
-  - getHours()
-  - getMinutes()
-  - getSeconds()
+  JSON Syntax
+  - Data added inside curly braces {  }
+  - Data added with key : value
+  - Key should be string wrapped in double quotes
+  - Data separated by comma
+  - Square brackets [] for arrays
+  - Curly braces {} for objects
+
+  Available Data Types
+  - String
+  - Number
+  - Object
+  - Array
+  - Boolean Values
+  - null
 */
-
-let dateNow = new Date();
-let birthday = new Date("Oct 25, 82");
-let dateDiff = dateNow - birthday;
-console.log(dateDiff / 1000 / 60 / 60 / 24 /365);
-
-console.log(dateNow.getTime());
-console.log(dateNow.getDate());
-console.log(dateNow.getFullYear());
-console.log(dateNow.getFullYear());
-console.log(dateNow.getMonth());
-console.log(dateNow.getDay());
-console.log(dateNow.getHours());
-console.log(dateNow.getMinutes());
-console.log(dateNow.getSeconds());
