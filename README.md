@@ -174,9 +174,9 @@
 - [x] `Watched` -128- Array.from Method
 - [x] `Watched` -129- Array.copyWithin Method
 - [x] `Watched` -130- Array.some Method
-- [X] `Watched` -131- Array.every Method
-- [X] `Watched` -132- Spread Syntax And Use Cases
-- [X] `Watched` -133- Set And Map Challenge
+- [x] `Watched` -131- Array.every Method
+- [x] `Watched` -132- Spread Syntax And Use Cases
+- [x] `Watched` -133- Set And Map Challenge
 
 ### Regular Expressions
 
@@ -199,33 +199,33 @@
 - [x] `Watched` -147- Object Oriented Programming Introduction
 - [x] `Watched` -148- Constructor Function Introduction
 - [x] `Processing` -149- Constructor Function New Syntax
-- [ ] `Processing` -150- Constructor Function Deal With Properties & Methods
-- [ ] `Processing` -151- Constructor Function Update Properties & Built In Constructors
-- [ ] `Processing` -152- Class Static Properties And Methods
-- [ ] `Processing` -153- Class Inheritance
-- [ ] `Processing` -154- Class Encapsulation & Private Properties
-- [ ] `Processing` -155- Prototype Introduction
-- [ ] `Processing` -156- Add To Prototype Chain & Extend Constructors Features
-- [ ] `Processing` -157- Object Meta Data And Descriptor Part 1
-- [ ] `Processing` -158- Object Meta Data And Descriptor Part 2
+- [x] `Processing` -150- Constructor Function Deal With Properties & Methods
+- [x] `Processing` -151- Constructor Function Update Properties & Built In Constructors
+- [x] `Processing` -152- Class Static Properties And Methods
+- [x] `Processing` -153- Class Inheritance
+- [x] `Processing` -154- Class Encapsulation & Private Properties
+- [x] `Processing` -155- Prototype Introduction
+- [x] `Processing` -156- Add To Prototype Chain & Extend Constructors Features
+- [x] `Processing` -157- Object Meta Data And Descriptor Part 1
+- [x] `Processing` -158- Object Meta Data And Descriptor Part 2
 
 ### Date, Time, Generators And Modules
 
-- [ ] `Processing` -159- Date And Time Introduction
-- [ ] `Processing` -160- Get Date And Time
-- [ ] `Processing` -161- Set Date And Time
-- [ ] `Processing` -162- Formatting Date And Time
-- [ ] `Processing` -163- Tracking Operations Time
-- [ ] `Processing` -164- Generators Function Introduction
-- [ ] `Processing` -165- Delegate Generators
-- [ ] `Processing` -166- Generate Infinite Numbers
-- [ ] `Processing` -167- Modules Import and Export
-- [ ] `Processing` -168- Named vs Default Export And Import All
+- [x] `Processing` -159- Date And Time Introduction
+- [x] `Processing` -160- Get Date And Time
+- [x] `Processing` -161- Set Date And Time
+- [x] `Processing` -162- Formatting Date And Time
+- [x] `Processing` -163- Tracking Operations Time
+- [x] `Processing` -164- Generators Function Introduction
+- [x] `Processing` -165- Delegate Generators
+- [x] `Processing` -166- Generate Infinite Numbers
+- [x] `Processing` -167- Modules Import and Export
+- [x] `Processing` -168- Named vs Default Export And Import All
 
 ### Asynchronous Programming And JSON And AJAX
 
-- [ ] `Processing` -169- Introduction And What Is JSON ?
-- [ ] `Processing` -170- JSON Syntax And Compare With JavaScript
+- [x] `Processing` -169- Introduction And What Is JSON ?
+- [x] `Processing` -170- JSON Syntax And Compare With JavaScript
 - [ ] `Processing` -171- API Overview And Tools
 - [ ] `Processing` -172- Parse And Stringify
 - [ ] `Processing` -173- Asynchronous vs Synchronous Programming
