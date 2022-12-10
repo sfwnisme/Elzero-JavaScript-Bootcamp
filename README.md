@@ -226,14 +226,14 @@
 
 - [x] `Processing` -169- Introduction And What Is JSON ?
 - [x] `Processing` -170- JSON Syntax And Compare With JavaScript
-- [ ] `Processing` -171- API Overview And Tools
-- [ ] `Processing` -172- Parse And Stringify
-- [ ] `Processing` -173- Asynchronous vs Synchronous Programming
-- [ ] `Processing` -174- CallStack, Web API
-- [ ] `Processing` -175- Event Loop, Callback Queue
-- [ ] `Processing` -176- What Is AJAX And Network Information
-- [ ] `Processing` -177- Request And Response From Real API
-- [ ] `Processing` -178- Loop On Data
+- [x] `Processing` -171- API Overview And Tools
+- [x] `Processing` -172- Parse And Stringify
+- [x] `Processing` -173- Asynchronous vs Synchronous Programming
+- [x] `Processing` -174- CallStack, Web API
+- [x] `Processing` -175- Event Loop, Callback Queue
+- [x] `Processing` -176- What Is AJAX And Network Information
+- [x] `Processing` -177- Request And Response From Real API
+- [x] `Processing` -178- Loop On Data
 
 ### Promises And API's And Training's
 
