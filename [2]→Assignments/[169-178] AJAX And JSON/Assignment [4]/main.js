@@ -4,9 +4,13 @@ req.send();
 console.log(req);
 
 req.onreadystatechange = function () {
+  // this main condition to confirm the rest process
   if (this.readyState === 4 && this.status === 200) {
-    console.log("--------------------------");
+    // convert to js object for appending process
+    // we should convert here by my opinion
     let reqToJs = JSON.parse(this.responseText);
+
+    // looping all the objects properties' values to appending in DOM
     for (let i = 0; i < reqToJs.length; i++) {
       reqToJs[i].category = "All";
       console.log(reqToJs[i].category); // testing
@@ -16,30 +20,31 @@ req.onreadystatechange = function () {
       // child container
       let child = document.createElement("div");
 
-      //child parts
-      //id
+      // child parts
+      // id
       let childId = document.createElement("p");
       childId = reqToJs[i].id;
 
-      //title
+      // title
       let childTitle = document.createElement("h2");
       childTitle.innerHTML = reqToJs[i].title;
 
       // horizontal separator
       let hr = document.createElement("hr");
 
-      //body
+      // body
       let childBody = document.createElement("p");
       childBody.innerHTML = reqToJs[i].body;
 
-      //category
+      // category
       let childCategory = document.createElement("p");
       childCategory.innerHTML = reqToJs[i].category;
 
-      //author
+      // author
       let childAuthor = document.createElement("p");
       childAuthor.innerHTML = reqToJs[i].author;
 
+      // appending to DOM
       child.append(childId);
       child.append(childTitle);
       child.append(hr);
