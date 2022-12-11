@@ -237,9 +237,9 @@
 
 ### Promises And API's And Training's
 
-- [ ] `Processing` -179- Callback Hell Or Pyramid Of Doom
-- [ ] `Processing` -180- Promise Intro And Syntax
-- [ ] `Processing` -181- Promise Then And Catch And Finally
+- [x] `Watched` -179- Callback Hell Or Pyramid Of Doom
+- [x] `Watched` -180- Promise Intro And Syntax
+- [x] `Watched` -181- Promise Then And Catch And Finally
 - [ ] `Processing` -182- Promise And XHR
 - [ ] `Processing` -183- Fetch API
 - [ ] `Processing` -184- Promise All And AllSettled And Race
