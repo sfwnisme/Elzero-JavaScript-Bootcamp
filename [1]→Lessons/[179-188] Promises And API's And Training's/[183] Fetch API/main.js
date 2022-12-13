@@ -1,6 +1,8 @@
 /*
-  Promise And XHR
+  Fetch API
+  - Return A Representation Of the Entire HTTP Response
 */
+
 
 /* ==========[Fetch Way To Call An API]========== */
 function fet() {
