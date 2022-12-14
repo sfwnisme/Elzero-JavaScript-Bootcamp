@@ -1,3 +1,9 @@
+/*
+  Async
+  - Async Before Function Mean This Function Return A Promise
+  - Async And Await Help In Creating Asynchronous Promise Behavior With Cleaner Style
+*/
+
 /* ===============[Promise Regular Way]=============== */
 function data1() {
   return new Promise((res, rej) => {
@@ -30,9 +36,9 @@ data2()
 
 /* ===============[Regular Function Way]=============== */
 
- function data3() {
-  let student =["Ahmed"];
-  if(student.length > 0) {
+function data3() {
+  let student = ["Ahmed"];
+  if (student.length > 0) {
     return "Good Student";
   } else {
     return Error("-----> NOO");
@@ -44,8 +50,8 @@ console.log(data3());
 /* ===============[Async Way]=============== */
 
 async function data4() {
-  let book =["Stories"];
-  if(book.length > 0) {
+  let book = ["Stories"];
+  if (book.length > 0) {
     return "There's A Great Stroy Named Oxford Bookworms";
   } else {
     throw new Error("-----> NOO");
@@ -53,4 +59,4 @@ async function data4() {
 }
 
 console.log(data4());
-data4().then((result) => console.log(result))
+data4().then((result) => console.log(result));
