@@ -240,10 +240,10 @@
 - [x] `Watched` -179- Callback Hell Or Pyramid Of Doom
 - [x] `Watched` -180- Promise Intro And Syntax
 - [x] `Watched` -181- Promise Then And Catch And Finally
-- [x] `Processing` -182- Promise And XHR
-- [x] `Processing` -183- Fetch API
-- [x] `Processing` -184- Promise All And AllSettled And Race
-- [x] `Processing` -185- Async And Trainings
-- [x] `Processing` -186- Await
-- [x] `Processing` -187- Try, Catch, Finally With Fetch
-- [x] `Processing` -188- The End And Advices
+- [x] `Watched` -182- Promise And XHR
+- [x] `Watched` -183- Fetch API
+- [x] `Watched` -184- Promise All And AllSettled And Race
+- [x] `Watched` -185- Async And Trainings
+- [x] `Watched` -186- Await
+- [x] `Watched` -187- Try, Catch, Finally With Fetch
+- [x] `Watched` -188- The End And Advices
