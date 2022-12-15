@@ -1,11 +1,8 @@
 /*
-  Await
-  - Await Works Only Inside Asnyc Functions
-  - Await Make JavaScript Wait For The Promise Result
-  - Await Is More Elegant Syntax Of Getting Promise Result
+  Async & Await With Try, Catch, Finally
 */
 
-/* ===============[Promise Regular Way]=============== */
+/* ===============[Promise With Try Way]=============== */
 function first() {
   const prom = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -15,30 +12,60 @@ function first() {
 
   function rend() {
     console.log("Before");
-    prom.then((result) => console.log(result));
-    console.log("After");
+    try {
+      prom.then((result) => console.log(result));
+    } catch (reason) {
+      console.log(reason);
+    } finally {
+      console.log("After");
+    }
   }
 
   rend();
 }
 
-first();
+// first();
 
-/* ===============[Promise Await Way]=============== */
+/* ===============[Promise Async And Await With Try Way]=============== */
 function second() {
-  const prom2 = new Promise((resolve, reject) => {
+  const prom = new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Call Of Duty video Games222");
+      // resolve("Call Of Duty video Games111");
+      reject("BaDDDDDD");
     }, 3999);
   });
 
-  async function rend2() {
+  async function rend() {
     console.log("Before");
-    console.log(await prom2);
-    console.log("After");
+    try {
+      console.log(await prom);
+    } catch (reason) {
+      console.log("noooooo" + reason);
+    } finally {
+      console.log("After");
+    }
   }
 
-  rend2();
+  rend();
 }
 
-second();
+// second();
+
+/* ===============[Promise Async And Await With Try Way]=============== */
+function third() {
+  async function rend() {
+    console.log("Before");
+    try {
+      const fet = await fetch("https://api.github.com/users/sfwnisme/repos");
+      console.log(await fet.json()); // you must add .json() otherwise fetch will not accept 'await'
+    } catch (reason) {
+      console.log(reason);
+    } finally {
+      console.log("After");
+    }
+  }
+
+  rend();
+}
+
+third();
