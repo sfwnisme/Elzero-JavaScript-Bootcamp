@@ -1,10 +1,6 @@
 # JavaScript Bootcamp Content [188 Videos]
 
-## Started Fornt End Road Map On 2021-7-10
-
-## Finished Html & Css With Practice On 2022-5-1
-
-## Stared Since 2022-5-15
+## Stared Since 2022-5-15 And Finished On 2022-12-15
 
 ### Introduction ↓
 
