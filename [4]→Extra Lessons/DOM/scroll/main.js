@@ -12,6 +12,11 @@
   
 */
 
+/*TODO
+  [x] DONE
+  [x] NO 
+ */
+
 /* >>>>>>>>>>[offsetHeight]<<<<<<<<<< */
 const main = document.querySelector("main");
 const mainText = document.querySelector("main .offsetHeight p");
