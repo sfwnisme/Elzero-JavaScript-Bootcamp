@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section,
+main {
+  /* font-size: 100px; */
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 198px;
+}
+main {
+  height: 500px;
+  background-color: rgb(207, 231, 251);
+}
+section {
+  height: 100vh;
+  background-color: rgb(207, 248, 251);
+  padding-bottom: 100px;
+}
+p {
+  font-size: 20px;
+  color: red;
+}
+div {
+  display: flex;
+  justify-content: center;
+}
