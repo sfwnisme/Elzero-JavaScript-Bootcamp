@@ -1,10 +1,10 @@
 let theName = "Elzero";
 
-console.log([...theName]);
-console.log(Array.from(theName));
-console.log([...new Set(theName)]);
-console.log(theName.split(""));
-console.log(Object.assign([], theName));
+console.log('spread', [...theName]);
+console.log('Array.form', Array.from(theName));
+console.log('spread, Set', [...new Set(theName)]);
+console.log('split', theName.split(''));
+console.log('Object.assign', Object.assign([], theName));
 let arr = [];
 for(let i = 0; i < theName.length; i++) {
   arr.push(theName[i]);
